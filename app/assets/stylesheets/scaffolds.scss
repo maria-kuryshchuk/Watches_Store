@@ -1,0 +1,89 @@
+body {
+  background-color: #feffda;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #feffda;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  color: #000;
+
+  &:visited {
+    color: #666;
+  }
+
+  &:hover {
+    color: #feffda;
+    background-color: #8fbc8e;
+  }
+}
+
+th {
+  padding-bottom: 5px;
+}
+
+td {
+  padding: 0 5px 7px;
+}
+
+div {
+  &.field, &.actions {
+    border-color: #224444;
+    background-color: #feffda;
+    margin-bottom: 20px;
+    margin-left: 2em;
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 1px;
+  color: red;
+  background-color: #feffda;
+  font-size: medium;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 1px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #feffda;
+
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 15px;
+    margin: -7px -7px 0;
+    background-color: #c00;
+    color: #feffda;
+  }
+
+  ul li {
+    font-size: 15px;
+    list-style: square;
+  }
+}
+
+label {
+  display: block;
+}

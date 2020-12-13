@@ -1,0 +1,165 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body, body > p, body > ol, body > ul, body > td {margin: 8px !important}
+
+#banner {
+    position: relative;
+    min-height: 40px;
+    background: #feffda;
+    padding: 10px;
+    border-bottom: 1px solid;
+    font: small-caps 40px/40px "Times New Roman", serif;
+    color: #feffda;
+    text-align: center;
+}
+
+img.banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+}
+
+#notice {
+    color: #000 !important;
+    border: 1px solid red;
+    padding: 1em;
+    margin-bottom: 2em;
+    background-color: #feffda;
+    font: bold smaller sans-serif;
+}
+
+#notice:empty {
+    display: none
+}
+
+#columns {
+    background: #007066;
+    display: flex
+}
+
+#main {
+    padding: 1em;
+    background: #feffda;
+    flex: 3;
+}
+
+#side {
+    padding: 1em 3em;
+    background: #8fbc8e;
+    border: solid 1px #224444;
+
+    form, div {
+        display: inline;
+    }
+    input {
+        font-size: small;
+    }
+
+    #cart {
+        font-size: 15px;
+        color: #feffda;
+        table {
+            border-top: 1px dotted #adf0fa;
+            border-bottom: 1px dotted #adf0fa;
+            margin-bottom: 10px;
+        }
+    }
+
+    ul {
+        padding: 10px;
+        li {
+            list-style: none;
+            a {
+                color: #224444;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 800px) {
+    #columns {
+        flex-direction: column-reverse;
+    }
+}
+
+@media all and (max-width: 500px) {
+    #banner {
+        height: 250px;
+    }
+    #banner .title {
+        display: none;
+    }
+}
+.links{
+  background-color: #adf0fa;
+  vertical-align: center;
+  text-align: center;
+  border: solid 1px #adf0fa;
+  border-radius: 7px;
+  margin: 5px;
+  float: left;
+  font-size: 15px;
+  color: #adf0fa;
+  height: 25px;
+  width: 150px;
+}
+
+.f_label{
+  font-size: 17px;
+  color: #224444;
+}
+
+.fine_field {
+  background-color: #ade4ca;
+  border: solid 1px #007066;
+  font-size: 15px;
+  color: #224444;
+  height: 30px;
+}
+
+.select_from{
+  height: 25px;
+  font-size: 14px;
+  color: #224444;
+}
+
+.fine_field_desc {
+  background-color: #ade4ca;
+  border-color: #007066;
+}
+
+.locale {
+  background-color: #adf0fa;
+  border: solid 1px #007066;
+  float: right;
+  margin: -0.25em 0.1em;
+  font-size: 15px;
+  color: #224444;
+  height: 30px;
+}
+
+.button{
+  background-color: #3b945e;
+  border: none;
+  color: #224444;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  height: 30px;
+}
